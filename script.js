@@ -24,3 +24,26 @@ if (heroButton) {
         heroButton.textContent = 'Learn More';
     });
 }
+
+// Carousel functionality
+let currentIndex = 0;
+const items = document.querySelectorAll('.carousel-item');
+const totalItems = items.length;
+
+function showItem(index) {
+    items.forEach((item, i) => {
+        item.classList.toggle('active', i === index);
+    });
+}
+
+function nextItem() {
+    currentIndex = (currentIndex + 1) % totalItems;
+    showItem(currentIndex);
+}
+
+setInterval(nextItem, 3000); // Change item every 3 seconds
+
+// Subscribe button functionality
+document.getElementById('subscribeButton').addEventListener('click', () => {
+    alert('Subscribe to our newsletter!');
+});
