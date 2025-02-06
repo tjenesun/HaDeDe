@@ -91,6 +91,10 @@ header nav ul li a {
   padding: 1rem;
 }
 
+#services .flex div .bg-gray-100 {
+  flex: none;
+}
+
 #services h3 {
   font-size: 1.5rem;
   font-weight: bold;
@@ -100,6 +104,18 @@ header nav ul li a {
 #services p {
   color: #4b5563;
 }
+
+/* Support Section */
+#support .flex div {
+  width: 100%;
+  max-width: 50%;
+  padding: 1rem;
+}
+
+#support .flex div .bg-gray-100 {
+  flex: none;
+}
+
 
 /* Testimonials Section */
 #testimonials {

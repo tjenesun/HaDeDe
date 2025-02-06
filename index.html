@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-gray-100">
-  <!-- Header ! -->
+  <!-- Header -->
   <header class="bg-white shadow-md fixed w-full z-10">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
       <h1 class="text-2xl font-bold text-gray-800">HaDeDe</h1>
@@ -20,7 +20,8 @@
           <li><a href="#home" class="text-gray-600 hover:text-yellow-500">Home</a></li>
           <li><a href="#about" class="text-gray-600 hover:text-yellow-500">About Us</a></li>
           <li><a href="#services" class="text-gray-600 hover:text-yellow-500">Our Services</a></li>
-          <li><a href="#contact" class="text-gray-600 hover:text-yellow-500">Contact Us</a></li>
+          <li><a href="#get-in-touch" class="text-gray-600 hover:text-yellow-500">Get in Touch</a></li>
+          <li><a href="support.html" class="text-gray-600 hover:text-yellow-500">Support</a></li>
         </ul>
       </nav>
     </div>
@@ -36,10 +37,14 @@
   </section>
 
   <!-- About Us Section -->
-  <section id="about" class="py-20 bg-gray-50">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-4xl font-bold mb-6 text-gray-800">About Us</h2>
-      <p class="text-gray-600 leading-relaxed">At HaDeDe, we are committed to excellence and innovation. Our team of professionals works tirelessly to bring you the best solutions tailored to your needs. We pride ourselves on delivering exceptional results for every software project.</p>
+  <section id="about" class="relative py-20 text-black">
+    <div class="absolute inset-10 bg-cover bg-center rounded-lg shadow-lg" style="background-image: url('images/industrial.jpg'); opacity: 0.4;"></div>
+    <div class="relative container mx-auto px-6 text-center bg-black bg-opacity-0 p-10 rounded-lg">
+      <h2 class="text-4xl font-bold mb-6">About Us</h2>
+      <p class="leading-relaxed mb-6">At HaDeDe, we are committed to excellence and innovation. Our team of professionals works tirelessly to bring you the best solutions tailored to your needs. We pride ourselves on delivering exceptional results for every software project.</p>
+      <p class="leading-relaxed mb-6">With years of experience in the industry, we have honed our skills and expertise to provide top-notch services. Our mission is to help businesses achieve their goals through innovative software solutions. We believe in building long-term relationships with our clients by consistently delivering high-quality work.</p>
+      <p class="leading-relaxed mb-6">Our team is composed of talented individuals who are passionate about technology and dedicated to providing the best possible service. We stay up-to-date with the latest trends and advancements in the industry to ensure that our clients receive the most effective and efficient solutions.</p>
+      <p class="leading-relaxed">Whether you need consulting, development, or ongoing support, HaDeDe is here to help. We are committed to your success and look forward to working with you.</p>
     </div>
   </section>
 
@@ -106,25 +111,30 @@
     </div>
   </section>
 
-  <!-- Contact Us Section -->
-  <section id="contact" class="py-20 bg-gray-50">
+  <!-- Get in Touch Section -->
+  <section id="get-in-touch" class="py-20 bg-white">
     <div class="container mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center mb-6 text-gray-800">Contact Us</h2>
-      <form class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg" id="contactForm">
+      <h2 class="text-4xl font-bold text-center mb-6 text-gray-800">Get in Touch with Us</h2>
+      <form class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg" id="getInTouchForm">
         <div class="mb-4">
           <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name</label>
           <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" 
-                 type="text" id="name" placeholder="Your name" aria-label="Enter your name">
+                 type="text" id="name" placeholder="Your name" aria-label="Enter your name" required>
         </div>
         <div class="mb-4">
           <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
           <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" 
-                 type="email" id="email" placeholder="Your email" aria-label="Enter your email">
+                 type="email" id="email" placeholder="Your email" aria-label="Enter your email" required>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="subject">Subject</label>
+          <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" 
+                 type="text" id="subject" placeholder="Subject" aria-label="Enter the subject">
         </div>
         <div class="mb-4">
           <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Message</label>
           <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" 
-                    id="message" rows="4" placeholder="Your message" aria-label="Enter your message"></textarea>
+                    id="message" rows="4" placeholder="Your message" aria-label="Enter your message" required></textarea>
         </div>
         <button type="submit" class="bg-yellow-500 text-white px-6 py-2 rounded-full hover:bg-yellow-600 transition duration-300">Send Message</button>
       </form>
@@ -136,9 +146,9 @@
     <div class="container mx-auto px-6 flex justify-between items-center">
       <p class="text-sm">&copy; 2024 HaDeDe B.V. All rights reserved.</p>
       <ul class="flex space-x-6">
-        <li><a href="#" class="hover:text-yellow-400">Privacy Policy</a></li>
+        <li><a href="privacy-policy.html" class="hover:text-yellow-400">Privacy Policy</a></li>
         <li><a href="#" class="hover:text-yellow-400">Terms of Service</a></li>
-        <li><a href="#" class="hover:text-yellow-400">Support</a></li>
+        <li><a href="support.html" class="hover:text-yellow-400">Support</a></li>
       </ul>
     </div>
   </footer>
@@ -150,21 +160,22 @@
 </body>
 <script src="script.js"></script>
 <script>
-  document.getElementById('contactForm').addEventListener('submit', function(event) {
+  document.getElementById('getInTouchForm').addEventListener('submit', function(event) {
   event.preventDefault();
 
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
+  const subject = document.getElementById('subject').value;
   const message = document.getElementById('message').value;
 
-  console.log('Form Data:', { name, email, message });
+  console.log('Form Data:', { name, email, subject, message });
 
   fetch('https://script.google.com/macros/s/AKfycbzlh0SBJoPIzZQeBfZ4oaCTJcT6OFYwWdlN3zLci7e_4QDlG_8gbfCpGgbo9VePJV7t/exec', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify({ name, email, message }),
+    body: JSON.stringify({ name, email, subject, message }),
     mode: 'no-cors'  // 🔥 Fixes CORS issue
   })
   .then(() => {
@@ -196,7 +207,7 @@ setInterval(nextItem, 3000); // Change item every 3 seconds
 
 // Subscribe button functionality
 document.getElementById('subscribeButton').addEventListener('click', () => {
-  document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+  document.getElementById('get-in-touch').scrollIntoView({ behavior: 'smooth' });
 });
 </script>
 </html>

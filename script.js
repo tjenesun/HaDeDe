@@ -1,14 +1,19 @@
 // Smooth scrolling for navigation links
 document.querySelectorAll('nav a').forEach(link => {
     link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const targetId = link.getAttribute('href').substring(1);
-        const targetSection = document.getElementById(targetId);
-        if (targetSection) {
-            window.scrollTo({
-                top: targetSection.offsetTop,
-                behavior: 'smooth'
-            });
+        const targetHref = link.getAttribute('href');
+        if (targetHref.startsWith('#')) {
+            e.preventDefault();
+            const targetId = targetHref.substring(1);
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+                window.scrollTo({
+                    top: targetSection.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        } else {
+            window.location.href = targetHref;
         }
     });
 });
