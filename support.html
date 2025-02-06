@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/cat.webp" type="image/webp">
+  <link rel="icon" href="images/cat.png" type="image/png">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <title>Support - HaDeDe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-white shadow-md fixed w-full z-10">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-gray-800">HaDeDe</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="index.html#home" class="text-gray-600 hover:text-yellow-500">Home</a></li>
+          <li><a href="index.html#about" class="text-gray-600 hover:text-yellow-500">About Us</a></li>
+          <li><a href="index.html#services" class="text-gray-600 hover:text-yellow-500">Our Services</a></li>
+          <li><a href="#contact-form" class="text-gray-600 hover:text-yellow-500">Contact Us</a></li>
+          <li><a href="support.html" class="text-gray-600 hover:text-yellow-500">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Support Section -->
+  <section id="support" class="py-20 bg-gradient-to-r from-yellow-400 to-yellow-600 text-white mt-16 animate-fade-in">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-6">Support</h2>
+      <p class="leading-relaxed mb-6">We are here to help you with any issues or questions you may have. Please use the resources below to get the support you need.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+          <h3 class="text-2xl font-bold text-gray-800 mb-2">Knowledge Base</h3>
+          <p class="text-gray-600">Find answers to common questions and learn how to use our products.</p>
+          <a href="#" class="text-yellow-500 hover:text-yellow-600">Visit Knowledge Base</a>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+          <h3 class="text-2xl font-bold text-gray-800 mb-2">Contact Support</h3>
+          <p class="text-gray-600">Get in touch with our support team for personalized assistance.</p>
+          <a href="#contact-form" class="text-yellow-500 hover:text-yellow-600">Contact Support</a>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+          <h3 class="text-2xl font-bold text-gray-800 mb-2">Community Forum</h3>
+          <p class="text-gray-600">Join our community forum to discuss and share with other users.</p>
+          <a href="#" class="text-yellow-500 hover:text-yellow-600">Visit Forum</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-20 bg-white animate-fade-in">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-6 text-gray-800">Frequently Asked Questions</h2>
+      <div class="text-left">
+        <h3 class="text-2xl font-bold mb-2 text-gray-800">How do I reset my password?</h3>
+        <p class="text-gray-600 mb-6">Go to the app settings → "Reset Password" and follow the instructions.</p>
+        
+        <h3 class="text-2xl font-bold mb-2 text-gray-800">Why is my app crashing?</h3>
+        <p class="text-gray-600 mb-6">Ensure you have the latest version installed from the App Store.</p>
+        
+        <h3 class="text-2xl font-bold mb-2 text-gray-800">How do I install and set up the app?</h3>
+        <p class="text-gray-600 mb-6">Download Hadede CAT-App from the App Store, open the app, and follow the on-screen instructions to get started.</p>
+        
+        <h3 class="text-2xl font-bold mb-2 text-gray-800">How do I report a bug or request a feature?</h3>
+        <p class="text-gray-600 mb-6">Please email us at developer@dome-auctions.com with details about the issue or suggestion.</p>
+        
+        <h3 class="text-2xl font-bold mb-2 text-gray-800">Is my data secure?</h3>
+        <p class="text-gray-600 mb-6">Yes, we prioritize user security and follow best practices to protect your information. See our Privacy Policy for more details.</p>
+        
+      </div>
+    </div>
+  </section>
+
+ <!-- Contact Us Form -->
+ <section id="contact-form" class="py-20 bg-gray-50 animate-fade-in">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-6 text-gray-800">Contact Support</h2>
+      <form class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg" id="contactForm">
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name</label>
+          <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" 
+                 type="text" id="name" placeholder="Your name" aria-label="Enter your name" required>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
+          <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" 
+                 type="email" id="email" placeholder="Your email" aria-label="Enter your email" required>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="subject">Subject</label>
+          <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" 
+                 type="text" id="subject" placeholder="Subject" aria-label="Enter the subject">
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Message</label>
+          <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" 
+                    id="message" rows="4" placeholder="Your message" aria-label="Enter your message" required></textarea>
+        </div>
+        <button type="submit" class="bg-yellow-500 text-white px-6 py-2 rounded-full hover:bg-yellow-600 transition duration-300">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact Support -->
+  <section id="contact-info" class="py-20 bg-gradient-to-r from-yellow-400 to-yellow-600 text-white animate-fade-in">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-6">Contact</h2>
+      <p class="leading-relaxed mb-6">Support Hours Monday - Friday, 9:00 AM - 5:00 PM (UTC):</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+          <h3 class="text-2xl font-bold text-gray-800 mb-2">Phone</h3>
+          <p class="text-gray-600">+1 (123) 456-7890</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+          <h3 class="text-2xl font-bold text-gray-800 mb-2">Email</h3>
+          <p class="text-gray-600">developer@dome-auctions.com</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+          <h3 class="text-2xl font-bold text-gray-800 mb-2">Address:</h3>
+          <p class="text-gray-600">Dynamostraat 11, 1014 BN Amsterdam</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- App Version and Updates Section -->
+ <section id="app-version" class="py-20 bg-gray-50 animate-fade-in">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-6 text-gray-800">App Version and Updates</h2>
+      <p class="text-gray-600 mb-4">Latest Version: v1.0.0 (Released: Mar 2025)</p>
+      <h3 class="text-2xl font-bold mb-2 text-gray-800">New Features:</h3>
+      <ul class="list-disc list-inside text-gray-600 mb-6">
+        <li>Dark Mode support</li>
+        <li>Bug fixes for login issues</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+      <p class="text-sm">&copy; 2024 HaDeDe B.V. All rights reserved.</p>
+      <ul class="flex space-x-6">
+        <li><a href="privacy-policy.html" class="hover:text-yellow-400">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Terms of Service</a></li>
+        <li><a href="support.html" class="hover:text-yellow-400">Support</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+<script src="script.js"></script>
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const subject = document.getElementById('subject').value;
+  const message = document.getElementById('message').value;
+
+  console.log('Form Data:', { name, email, subject, message });
+
+  fetch('https://script.google.com/macros/s/AKfycbzlh0SBJoPIzZQeBfZ4oaCTJcT6OFYwWdlN3zLci7e_4QDlG_8gbfCpGgbo9VePJV7t/exec', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ name, email, subject, message }),
+    mode: 'no-cors'  // 🔥 Fixes CORS issue
+  })
+  .then(() => {
+    alert('Message sent successfully!');
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    alert('Error sending message.');
+  });
+});
+</script>
+</html>

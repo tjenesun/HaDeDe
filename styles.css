@@ -4,6 +4,11 @@
 header {
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  left: 0;
 }
 
 header h1 {
@@ -21,6 +26,7 @@ header nav ul li a {
   color: white;
   padding: 5rem 0;
   text-align: center;
+  margin-top: 4rem;
 }
 
 #home h2 {
@@ -53,6 +59,86 @@ header nav ul li a {
 #about p {
   color: #4b5563;
   line-height: 1.75;
+}
+
+/* Services Section */
+#services {
+  background-color: #ffffff;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+#services h2 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+#services p {
+  color: #4b5563;
+  line-height: 1.75;
+}
+
+#services .flex {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+#services .flex div {
+  width: 100%;
+  max-width: 100%;
+  padding: 1rem;
+}
+
+#services .flex div .bg-gray-100 {
+  flex: none;
+}
+
+#services h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+#services p {
+  color: #4b5563;
+}
+
+/* Support Section */
+#support .flex div {
+  width: 100%;
+  max-width: 50%;
+  padding: 1rem;
+}
+
+#support .flex div .bg-gray-100 {
+  flex: none;
+}
+
+
+/* Testimonials Section */
+#testimonials {
+  background-color: #f9fafb;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+#testimonials h2 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+#testimonials blockquote {
+  font-style: italic;
+  color: #4b5563;
+}
+
+#testimonials p {
+  font-weight: bold;
+  color: #1f2937;
+  margin-top: 0.5rem;
 }
 
 /* Contact Section */
@@ -90,7 +176,6 @@ header nav ul li a {
 
 #contact button {
   background-image: linear-gradient(45deg, #FECC03, #786000);
-
   color: white;
   padding: 0.5rem 1.5rem;
   border-radius: 9999px;
@@ -115,4 +200,66 @@ footer ul li a {
 
 footer ul li a:hover {
   color: #FECC03;
+}
+
+/* Carousel Styles */
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-item:not(.active) {
+  display: none;
+}
+
+/* 3D Subscribe Button */
+#subscribeButton {
+  background-color: (45deg, #FECC03, #786000);
+  color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1), 0 8px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#subscribeButton:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1), 0 12px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+.animate-fade-in-delay {
+  animation: fadeIn 1s ease-out 0.5s;
 }
